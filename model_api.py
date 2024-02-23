@@ -102,3 +102,7 @@ def CNN_classifier(filters, hidden_layers, lr=3e-3, gamma=1e-5, verbose=False):
 		model.summary()
 
 	return model
+
+
+def save_model(model, name):
+	model.save(name)
